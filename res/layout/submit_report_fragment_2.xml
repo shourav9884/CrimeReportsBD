@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin" >
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#AAAAA2"
+        android:layout_marginBottom="10dp">
+        
+        <fragment
+        android:id="@+id/map_add_pin"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+        
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCATION*"
+        android:textColor="#f0000000"/>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textSize="8dp"
+        android:textColor="#f0000000"/>
+    
+    <EditText android:id="@+id/editText_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_box_white">
+        <requestFocus />
+    </EditText>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">        
+        
+        <Button android:id="@+id/button_news_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="News Source Link"
+            android:textSize="12dp"
+            android:textColor="#33A4D4"
+            android:drawableTop="@drawable/news_link_selector"
+            android:background="@android:color/transparent"/>        
+            
+        <Button android:id="@+id/button_video_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="External Video Link"
+            android:textSize="12dp"
+            android:textColor="#33A4D4"
+            android:drawableTop="@drawable/vide_link_selector"
+            android:background="@android:color/transparent"/>             
+        
+        <Button android:id="@+id/button_upload_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Upload Photo"
+            android:textSize="12dp"
+            android:textColor="#33A4D4"
+            android:drawableTop="@drawable/camera_selector"
+            android:background="@android:color/transparent"/>        
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        
+        <Button android:id="@+id/button_submit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="Back"
+            android:drawableStart="@drawable/ic_previous"
+            style="@style/CustomButtonStyle"/>
+        
+        
+        <Button android:id="@+id/button_submit_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="Submit"
+            android:drawableEnd="@drawable/ic_accept"
+            style="@style/CustomButtonStyle" />
+        
+    </LinearLayout>
+        
+</LinearLayout>

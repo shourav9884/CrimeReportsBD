@@ -1,0 +1,45 @@
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background"
+        tools:context=".ReportsListActivity">
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportsListActivity"
+    android:orientation="vertical"
+    android:background="@drawable/app_background" >
+
+    <ListView
+        android:id="@+id/reports_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        
+        
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" >
+</ListView>
+
+</RelativeLayout>
+ </FrameLayout>
+<ExpandableListView android:id="@+id/expandable_list_view"
+         android:layout_width="240dp"
+         android:layout_height="match_parent"
+         android:layout_gravity="start"
+         android:choiceMode="singleChoice"
+         android:divider="#33A4B4"
+         android:dividerHeight="2dp"
+         android:groupIndicator="@android:color/transparent"
+         android:indicatorLeft="180dp"
+         
+         android:padding="10dp"
+         android:background="@color/semi_black"/>
+         
+</android.support.v4.widget.DrawerLayout>

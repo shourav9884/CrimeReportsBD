@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pressed">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/res/drawable/pressed.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewReportActivity"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@drawable/app_background" >
+
+    <fragment
+        android:id="@+id/map_view_report"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+    
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	    
+	        <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="TITLE LINE TITLE LINE"
+			        android:textSize="20dp"
+			        android:textStyle="bold"
+			        android:id="@+id/text_view_report_title"
+			        android:textColor="#f0000000"
+			        android:layout_weight="1" />
+			    
+			    <ImageView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/image_view_verification"
+			        android:src="@drawable/ic_accept"
+			        android:layout_gravity="center_vertical"/>
+			    
+		    </LinearLayout>
+		    
+		    
+		    <View android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#AAAAA2"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"/>
+		    
+		    <RelativeLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+		        
+		        <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Category"
+		            android:layout_alignParentLeft="true"
+		            android:id="@+id/text_view_report_category"
+		            android:textColor="#f0000000"/>
+		        
+		        <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="23 Dec 2013"
+		            android:layout_alignParentRight="true"
+		            android:id="@+id/text_view_report_date"
+		            android:textColor="#f0000000"/>
+		        
+		    </RelativeLayout>
+		    
+		    <View android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#AAAAA2"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"/>
+		    
+		    <TextView android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lorem_ipsum"
+		        android:id="@+id/text_view_report_description"
+		        android:textColor="#f0000000"/>
+		    
+		    <View android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#AAAAA2"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"/>
+		    
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp" 
+		        android:id="@+id/news_link_holder"
+		        android:visibility="gone">
+		        
+		        <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="News Link: "
+		            android:textColor="#f0000000"/>
+		        
+		        <TextView android:id="@+id/hypertext_news_link"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="http://www.google.com"
+		            android:autoLink="web"/>	        
+		        
+		    </LinearLayout>
+		    
+		    <View android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#AAAAA2"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        android:id="@+id/news_link_border"
+		        android:visibility="gone"/>
+		    
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp" 
+		        android:id="@+id/video_link_holder"
+		        android:visibility="gone">
+		        
+		        <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Video Link: "
+		            android:textColor="#f0000000"/>
+		        
+		        <TextView android:id="@+id/hypertext_video_link"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="http://www.youtube.com"
+		            android:autoLink="web"/>	        
+		        
+		    </LinearLayout>
+		    
+		    <View android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#AAAAA2"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        android:id="@+id/video_link_border"
+		        android:visibility="gone"/>
+		    
+		 	<Button android:id="@+id/button_view_comments"
+		 	    android:layout_width="match_parent"
+		 	    android:layout_height="wrap_content"
+		 	    android:text="Comments(0)"
+		 	    android:textSize="20dp"
+		 	    android:gravity="center"
+		 	    style="@style/CustomButtonStyle" />
+		 	
+		 	<!-- <View android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="#AAAAA2"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"/> -->
+		    
+	    </LinearLayout>
+	    
+    </ScrollView>
+    
+</LinearLayout>
